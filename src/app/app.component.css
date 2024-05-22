@@ -1,0 +1,57 @@
+/* Global */
+
+h1 {
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* Sidebar with the user's kittens */
+
+.user-kitten {
+    position: fixed;
+    background-color: #FADCD9;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.user-kitten ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Main page with creting and adopting a kitten */
+
+.adopt-page {
+    margin-right: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+app-create-kitten, .kitten-list{
+    background-color: #F9F1F0;
+    width: 50%;
+    min-width: 400px;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.kitten-list ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}

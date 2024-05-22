@@ -1,0 +1,19 @@
+.kitten-profil {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+span {
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}

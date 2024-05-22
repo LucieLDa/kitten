@@ -1,0 +1,11 @@
+<div class="kitten-card">
+    <div class="kitten-info">
+        <img [src]="kitten.image" alt="">
+        <div class="overlay">
+            {{kitten.name}}
+            {{kitten.race}}
+            {{kitten.date}}  
+        </div>
+    </div>
+    <button (click)="adoptKitten()">Adopter</button>
+</div>

@@ -1,0 +1,17 @@
+<h1>Rajoute un chaton !</h1>
+
+<form #myForm="ngForm" (ngSubmit)="myForm.valid && addKitten()">
+    <label for="kittenName">Nom</label>
+    <input type="text" name="kittenName" id="kittenName" [(ngModel)]="name" #kittenName="ngModel" minlength="3" required>
+    
+    <label for="kittenRace">Race</label>
+    <input type="text" name="kittenRace" id="kittenRace" [(ngModel)]="race" minlength="3" required>
+    
+    <label for="kittenDate">Date de naissance</label>
+    <input type="date" name="kittenDate" id="kittenDate" [(ngModel)]="date" required>
+    
+    <label for="kittenImage">Lien de l'image</label>
+    <input type="text" name="kittenImage" id="kittenImage" [(ngModel)]="image" minlength="3" required>
+    
+    <button type="submit" [disabled]="!myForm.valid">Rajouter</button>
+</form>

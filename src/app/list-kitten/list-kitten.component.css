@@ -1,0 +1,54 @@
+.kitten-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    width: 110px;
+    background-color: #F8AFA6;
+    border-radius: 8px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+button {
+    width: 100%;
+    background-color: #c45a4e;
+    color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #F79489;
+}
+
+.kitten-info {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F8AFA6;
+    color: white;
+    text-align: center;
+  }
+  
+  .kitten-info:hover .overlay {
+    opacity: 1;
+  }
